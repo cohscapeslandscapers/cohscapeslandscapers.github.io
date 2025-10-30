@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CohScapes. - Professional Landscaping Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>CohScapes.</h2>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Transform Your Outdoor Space</h1>
+        <p class="hero-subtitle">
+          Professional landscaping services that bring your vision to life with
+          expert design, quality craftsmanship, and sustainable solutions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#gallery" class="btn btn-primary">View Our Work</a>
+          <a href="#contact" class="btn btn-secondary">Get Free Quote</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img
+          src="https://images.pexels.com/photos/1400375/pexels-photo-1400375.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Beautiful landscaped garden"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About CohScapes.</h2>
+          <p>Creating stunning outdoor environments for over 10 years</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Excellence in Every Project</h3>
+            <p>
+              We are passionate about transforming ordinary outdoor spaces into
+              extraordinary landscapes. Our team of certified professionals
+              combines creativity with technical expertise to deliver results
+              that exceed expectations.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <h4>500+</h4>
+                <span>Projects Completed</span>
+              </div>
+              <div class="stat">
+                <h4>10+</h4>
+                <span>Years Experience</span>
+              </div>
+              <div class="stat">
+                <h4>100%</h4>
+                <span>Client Satisfaction</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Professional landscaping team"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p>Comprehensive landscaping solutions for every outdoor space</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">🌿</div>
+            <h3>Garden Design</h3>
+            <p>
+              Custom garden designs that reflect your style and complement your
+              property's architecture.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🏗️</div>
+            <h3>Hardscaping</h3>
+            <p>
+              Patios, walkways, retaining walls, and outdoor structures built to
+              last.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🌱</div>
+            <h3>Lawn Care</h3>
+            <p>
+              Professional lawn installation, maintenance, and restoration
+              services.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🌳</div>
+            <h3>Tree & Plant Care</h3>
+            <p>
+              Expert tree planting, pruning, and plant selection for optimal
+              growth.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">💡</div>
+            <h3>Outdoor Lighting</h3>
+            <p>
+              Illumination design that enhances safety and highlights your
+              landscape features.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">🏡</div>
+            <h3>Outdoor Living</h3>
+            <p>
+              Fire pits, outdoor kitchens, and entertainment areas for
+              year-round enjoyment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Project Gallery</h2>
+          <p>Explore our portfolio of stunning landscaping transformations</p>
+        </div>
+
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="garden">Garden Design</button>
+          <button class="filter-btn" data-filter="hardscape">
+            Hardscaping
+          </button>
+          <button class="filter-btn" data-filter="lawn">Lawn Care</button>
+          <button class="filter-btn" data-filter="trees">Trees & Plants</button>
+          <button class="filter-btn" data-filter="outdoor">
+            Outdoor Living
+          </button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-container">
+          <!-- Gallery items will be loaded dynamically by JavaScript -->
+        </div>
+
+        <div class="load-more-container">
+          <button id="load-more" class="btn btn-primary">
+            Load More Projects
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get Started Today</h2>
+          <p>
+            Ready to transform your outdoor space? Contact us for a free
+            consultation
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>📞 Call Us</h3>
+              <p>(+254) 758-467-157 / 781-492-929</p>
+            </div>
+            <div class="contact-item">
+              <h3>📧 Email</h3>
+              <p>cohscapeslandscapers@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <h3>📍 Location</h3>
+              <p>Kenya<br />Nairobi</p>
+            </div>
+            <div class="contact-item">
+              <h3>⏰ Hours</h3>
+              <p>Mon - Fri: 9AM - 6PM<br />Sat: 10AM - 4PM</p>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-row">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-row">
+                <input type="tel" placeholder="Phone Number" />
+                <select>
+                  <option>Select Service</option>
+                  <option>Garden Design</option>
+                  <option>Hardscaping</option>
+                  <option>Lawn Care</option>
+                  <option>Tree & Plant Care</option>
+                  <option>Outdoor Living</option>
+                </select>
+              </div>
+              <textarea
+                placeholder="Tell us about your project..."
+                rows="4"
+              ></textarea>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>CohScapes.</h3>
+            <p>Transforming landscapes, enriching lives.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p>📞 (+254) 758-467-157 / 781-492-929</p>
+            <p>📧 cohscapeslandscapers@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 CohScapes . All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-media">
+          <img id="lightbox-image" src="" alt="" />
+          <video id="lightbox-video" controls style="display: none">
+            <source src="" type="video/mp4" />
+          </video>
+        </div>
+        <div class="lightbox-info">
+          <h3 id="lightbox-title"></h3>
+          <p id="lightbox-description"></p>
+        </div>
+        <div class="lightbox-nav">
+          <button id="prev-btn">❮</button>
+          <button id="next-btn">❯</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
