@@ -3,29 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CohScapes. - Professional Landscaping Services</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2322C55E'%3E%3Cpath d='M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.66c.48-.17 1.48-.32 2.34-.32 2.02 0 3.5.85 4.5 2.34C13.73 21 14.86 21 16 21c1.3 0 2.4-.84 2.82-2.06C20.07 16.81 19.5 14 19 12c-.5-2-1.5-3.5-2-4z'/%3E%3C/svg%3E">
+    <title>CohScapes. - Professional Landscaping & Outdoor Living in Nairobi, Kenya</title>
+    <meta name="description" content="Premier landscaping services in Nairobi, Kenya. Custom garden design, lush lawn installation, hardscaping, outdoor lighting, and sustainable landscape maintenance.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2316a34a'%3E%3Cpath d='M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.66c.48-.17 1.48-.32 2.34-.32 2.02 0 3.5.85 4.5 2.34C13.73 21 14.86 21 16 21c1.3 0 2.4-.84 2.82-2.06C20.07 16.81 19.5 14 19 12c-.5-2-1.5-3.5-2-4z'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>CohScapes.</h2>
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-info">
+                <span>📍 Serving Nairobi & Environs (Karen, Runda, Westlands, Kilimani & Beyond)</span>
+                <span class="divider">|</span>
+                <span>⏰ Mon - Sat: 8:00 AM - 6:00 PM</span>
             </div>
-            <ul class="nav-menu">
+            <div class="top-bar-contact">
+                <a href="tel:+254758467157" class="top-link">📞 (+254) 758-467-157</a>
+                <span class="divider">|</span>
+                <a href="https://wa.me/254758467157?text=Hi%20CohScapes!%20I'm%20interested%20in%20a%20landscaping%20consultation." target="_blank" rel="noopener noreferrer" class="top-link top-wa">💬 WhatsApp Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-leaf">🌿</span>
+                <div class="logo-text">
+                    <h2>CohScapes<span>.</span></h2>
+                    <small>Landscaping & Outdoor Living</small>
+                </div>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#transformations" class="nav-link">Before & After</a></li>
+                <li><a href="#estimator" class="nav-link">Instant Estimate</a></li>
                 <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="mobile-nav-cta">
+                    <a href="https://wa.me/254758467157?text=Hi%20CohScapes!%20I'd%20like%20to%20book%20a%20free%20site%20visit." target="_blank" rel="noopener noreferrer" class="btn btn-wa-mobile">
+                        💬 Chat on WhatsApp
+                    </a>
+                </li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/254758467157?text=Hi%20CohScapes!%20I'd%20like%20to%20get%20a%20quote%20for%20my%20compound." target="_blank" rel="noopener noreferrer" class="btn btn-nav-wa">
+                    💬 WhatsApp
+                </a>
+                <a href="#contact" class="btn btn-nav-quote">Get Free Quote</a>
+                <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -33,46 +73,138 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Transform Your Outdoor Space</h1>
-            <p class="hero-subtitle">Professional landscaping services that bring your vision to life with expert design, quality craftsmanship, and sustainable solutions.</p>
+            <div class="hero-pill">
+                <span class="pulse-dot"></span>
+                <span>Top-Rated Landscaping Specialists in Nairobi</span>
+            </div>
+            <h1 class="hero-title">Transform Your Outdoor Space Into a <span class="highlight-text">Living Masterpiece</span></h1>
+            <p class="hero-subtitle">Professional landscape architecture, lush turf installation, durable stone hardscaping, and garden maintenance designed to thrive in Kenya's climate.</p>
+            
             <div class="hero-buttons">
-                <a href="#gallery" class="btn btn-primary">View Our Work</a>
-                <a href="#contact" class="btn btn-secondary">Get Free Quote</a>
+                <a href="#estimator" class="btn btn-primary">
+                    <span>Calculate Instant Estimate</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="https://wa.me/254758467157?text=Hello%20CohScapes!%20I%20would%20like%20to%20request%20a%20free%20on-site%20consultation." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                    <span class="wa-icon">💬</span> Chat on WhatsApp
+                </a>
+                <a href="tel:+254758467157" class="btn btn-outline">
+                    <span>📞 Call Us</span>
+                </a>
+            </div>
+
+            <div class="hero-badges">
+                <div class="hero-badge-item">
+                    <div class="badge-stars">★★★★★</div>
+                    <span class="badge-label">4.9/5 Rating (150+ Reviews)</span>
+                </div>
+                <div class="badge-divider"></div>
+                <div class="hero-badge-item">
+                    <span class="badge-number">500+</span>
+                    <span class="badge-label">Projects Completed</span>
+                </div>
+                <div class="badge-divider"></div>
+                <div class="hero-badge-item">
+                    <span class="badge-number">100%</span>
+                    <span class="badge-label">Free On-Site Visits</span>
+                </div>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="https://images.pexels.com/photos/1400375/pexels-photo-1400375.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Beautiful landscaped garden">
+
+        <div class="hero-image-wrapper">
+            <div class="hero-main-card">
+                <img src="https://images.pexels.com/photos/1400375/pexels-photo-1400375.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Beautiful landscaped garden and lawn by CohScapes">
+                
+                <div class="hero-floating-card top-float">
+                    <div class="floating-icon">🌿</div>
+                    <div>
+                        <strong>100% Green Turf Guarantee</strong>
+                        <p>Kikuyu, Paspalum & Pemba Grass</p>
+                    </div>
+                </div>
+
+                <div class="hero-floating-card bottom-float">
+                    <div class="floating-icon">🏡</div>
+                    <div>
+                        <strong>Custom Outdoor Living</strong>
+                        <p>Hardscapes, Fire Pits & Patios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Trust Features -->
+    <section class="trust-features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">📐</div>
+                    <h3>Custom 3D Designs</h3>
+                    <p>Visualize your new compound before ground breaks with detailed layout plans tailored to your property.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Climate-Adapted Flora</h3>
+                    <p>We source hardy, drought-tolerant plants and premium sod that flourish year-round in Kenyan soils.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🏗️</div>
+                    <h3>Master Hardscaping</h3>
+                    <p>Natural stone pavers, retaining walls, elegant driveways, and custom water features built to endure.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">💧</div>
+                    <h3>Smart Eco-Irrigation</h3>
+                    <p>Water-efficient drip and automated sprinkler systems that keep your landscape emerald green while saving water.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2>About CohScapes.</h2>
-                <p>Creating stunning outdoor environments for over 10 years</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Excellence in Every Project</h3>
-                    <p>We are passionate about transforming ordinary outdoor spaces into extraordinary landscapes. Our team of certified professionals combines creativity with technical expertise to deliver results that exceed expectations.</p>
-                    <div class="about-stats">
-                        <div class="stat">
+            <div class="about-grid">
+                <div class="about-text-col">
+                    <span class="section-tag">About CohScapes.</span>
+                    <h2 class="section-title">Bringing Nature & Architecture Together for Over 10 Years</h2>
+                    <p class="about-description">At <strong>CohScapes</strong>, we believe your outdoor space should be a peaceful, breathtaking sanctuary that enhances your lifestyle and adds significant value to your property.</p>
+                    <p class="about-description">Based in Nairobi, Kenya, our dedicated crew of landscape architects, certified horticulturists, and stonemasons combines creative vision with hands-on precision. From cozy residential compounds in Kilimani to sprawling private residences in Karen and commercial business parks, we deliver unmatched quality on every square foot.</p>
+                    
+                    <div class="about-stats-grid">
+                        <div class="stat-card">
                             <h4>500+</h4>
-                            <span>Projects Completed</span>
+                            <span>Outdoor Projects</span>
                         </div>
-                        <div class="stat">
+                        <div class="stat-card">
                             <h4>10+</h4>
                             <span>Years Experience</span>
                         </div>
-                        <div class="stat">
+                        <div class="stat-card">
                             <h4>100%</h4>
                             <span>Client Satisfaction</span>
                         </div>
+                        <div class="stat-card">
+                            <h4>15+</h4>
+                            <span>Skilled Craftsmen</span>
+                        </div>
+                    </div>
+
+                    <div class="about-cta-row">
+                        <a href="#services" class="btn btn-primary">Explore Our Services</a>
+                        <a href="#contact" class="btn btn-secondary">Request Site Consultation</a>
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional landscaping team">
+
+                <div class="about-media-col">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional landscaping team in action">
+                        <div class="experience-badge">
+                            <span class="exp-years">10+</span>
+                            <span class="exp-text">Years of Quality Craftsmanship</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,39 +214,265 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive landscaping solutions for every outdoor space</p>
+                <span class="section-tag">Our Expertise</span>
+                <h2 class="section-title">Comprehensive Landscaping Services</h2>
+                <p class="section-subtitle">Tailored outdoor solutions designed for Kenya's climate and modern residential living</p>
             </div>
+
             <div class="services-grid">
+                <!-- Service 1 -->
                 <div class="service-card">
-                    <div class="service-icon">🌿</div>
-                    <h3>Garden Design</h3>
-                    <p>Custom garden designs that reflect your style and complement your property's architecture.</p>
+                    <div class="service-image">
+                        <img src="src/images/garden/garden-01.jpg" alt="Custom Garden Design" loading="lazy">
+                        <span class="service-badge">Popular</span>
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon-wrap">🌿</div>
+                        <h3>Garden Design & Planting</h3>
+                        <p>Bespoke landscape plans featuring lush flower beds, decorative shrubs, and organic soil preparation.</p>
+                        <ul class="service-features">
+                            <li>✓ 3D Concept Design & Soil Testing</li>
+                            <li>✓ Native & Tropical Ornamental Plants</li>
+                            <li>✓ Rockeries, Borders & Mulching</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#contact" class="service-btn" data-service="Garden Design">Book This Service →</a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Service 2 -->
                 <div class="service-card">
-                    <div class="service-icon">🏗️</div>
-                    <h3>Hardscaping</h3>
-                    <p>Patios, walkways, retaining walls, and outdoor structures built to last.</p>
+                    <div class="service-image">
+                        <img src="src/images/hardscape/hardscape-01.jpg" alt="Hardscaping and Stone Patios" loading="lazy">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon-wrap">🏗️</div>
+                        <h3>Hardscaping & Stonework</h3>
+                        <p>Durable walkways, cabro paving, natural stone patios, and retaining walls built for durability and elegance.</p>
+                        <ul class="service-features">
+                            <li>✓ Natural Mazeras & Coral Stone Pavers</li>
+                            <li>✓ Retaining Walls & Garden Terracing</li>
+                            <li>✓ Step Pathways & Driveway Paving</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#contact" class="service-btn" data-service="Hardscaping">Book This Service →</a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Service 3 -->
                 <div class="service-card">
-                    <div class="service-icon">🌱</div>
-                    <h3>Lawn Care</h3>
-                    <p>Professional lawn installation, maintenance, and restoration services.</p>
+                    <div class="service-image">
+                        <img src="src/images/lawn/lawn-01.jpg" alt="Lawn Installation and Restoration" loading="lazy">
+                        <span class="service-badge">Essential</span>
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon-wrap">🌱</div>
+                        <h3>Lawn Installation & Turf Care</h3>
+                        <p>Fresh sodding, lawn leveling, dethatching, aeration, and weed control for golf-course-quality emerald grass.</p>
+                        <ul class="service-features">
+                            <li>✓ Kikuyu, Paspalum, Pemba & Buffalo Sod</li>
+                            <li>✓ Soil Fumigation, Leveling & Grading</li>
+                            <li>✓ Scheduled Maintenance & Organic Feeding</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#contact" class="service-btn" data-service="Lawn Care">Book This Service →</a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Service 4 -->
                 <div class="service-card">
-                    <div class="service-icon">🌳</div>
-                    <h3>Tree & Plant Care</h3>
-                    <p>Expert tree planting, pruning, and plant selection for optimal growth.</p>
+                    <div class="service-image">
+                        <img src="src/images/trees/trees-01.jpg" alt="Tree Planting and Arborist Care" loading="lazy">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon-wrap">🌳</div>
+                        <h3>Tree Planting & Pruning</h3>
+                        <p>Mature shade tree installation, decorative palm planting, crown thinning, and hedge sculpting.</p>
+                        <ul class="service-features">
+                            <li>✓ Indigenous & Fruit Tree Planting</li>
+                            <li>✓ Precision Hedge Trimming & Shaping</li>
+                            <li>✓ Safe Tree Removal & Stump Grinding</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#contact" class="service-btn" data-service="Tree & Plant Care">Book This Service →</a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Service 5 -->
                 <div class="service-card">
-                    <div class="service-icon">💡</div>
-                    <h3>Outdoor Lighting</h3>
-                    <p>Illumination design that enhances safety and highlights your landscape features.</p>
+                    <div class="service-image">
+                        <img src="src/images/hardscape/hardscape-04.jpg" alt="Outdoor Landscape Lighting" loading="lazy">
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon-wrap">💡</div>
+                        <h3>Landscape Lighting</h3>
+                        <p>Architectural low-voltage and solar LED lighting that enhances compound security and creates nighttime drama.</p>
+                        <ul class="service-features">
+                            <li>✓ Tree Uplighting & Pathway Illumination</li>
+                            <li>✓ Energy-Efficient Solar & Low-Voltage LEDs</li>
+                            <li>✓ Weatherproof & Automated Timers</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#contact" class="service-btn" data-service="Outdoor Lighting">Book This Service →</a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Service 6 -->
                 <div class="service-card">
-                    <div class="service-icon">🏡</div>
-                    <h3>Outdoor Living</h3>
-                    <p>Fire pits, outdoor kitchens, and entertainment areas for year-round enjoyment.</p>
+                    <div class="service-image">
+                        <img src="poster/images/outdoor/outdoor-poster.jpg" alt="Outdoor Living and Fire Pits" loading="lazy">
+                        <span class="service-badge">Luxury</span>
+                    </div>
+                    <div class="service-body">
+                        <div class="service-icon-wrap">🏡</div>
+                        <h3>Outdoor Living & Pergolas</h3>
+                        <p>Cozy sunken seating areas, bespoke stone fire pits, outdoor kitchen setups, and timber pergolas.</p>
+                        <ul class="service-features">
+                            <li>✓ Wood & Metal Pergola Construction</li>
+                            <li>✓ Sunken Fire Pits & Built-In Benches</li>
+                            <li>✓ Water Fountains & Garden Waterfalls</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#contact" class="service-btn" data-service="Outdoor Living">Book This Service →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformations / Before & After Section -->
+    <section id="transformations" class="transformations-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Proof of Quality</span>
+                <h2 class="section-title">See The Transformations</h2>
+                <p class="section-subtitle">Drag the slider left and right to inspect the dramatic difference our team delivers</p>
+            </div>
+
+            <!-- Comparison Selector Tabs -->
+            <div class="slider-tabs">
+                <button class="slider-tab-btn active" data-before="src/images/lawn/lawn-03.jpg" data-after="src/images/lawn/lawn-01.jpg" data-title="Lawn Revitalization" data-desc="Reviving dry, patchy clay soil into a vibrant, uniform carpet of premium turf grass.">Lawn Restoration</button>
+                <button class="slider-tab-btn" data-before="src/images/hardscape/hardscape-05.jpg" data-after="src/images/hardscape/hardscape-01.jpg" data-title="Compound Stonework" data-desc="Upgrading uneven walkways into durable, slip-resistant natural stone paving.">Patio & Hardscape</button>
+                <button class="slider-tab-btn" data-before="src/images/garden/garden-05.jpg" data-after="src/images/garden/garden-01.jpg" data-title="Full Garden Makeover" data-desc="Re-engineering overgrown compound corners into sculptured garden beds with perennial blooms.">Garden Makeover</button>
+            </div>
+
+            <div class="before-after-container" id="before-after-box">
+                <div class="img-wrapper before-wrapper">
+                    <img id="before-img" src="src/images/lawn/lawn-03.jpg" alt="Before Landscaping Transformation">
+                    <span class="comparison-label before-tag">Before</span>
+                </div>
+                <div class="img-wrapper after-wrapper" id="after-wrapper">
+                    <img id="after-img" src="src/images/lawn/lawn-01.jpg" alt="After Landscaping Transformation">
+                    <span class="comparison-label after-tag">After CohScapes</span>
+                </div>
+                <div class="slider-handle" id="slider-handle">
+                    <div class="handle-arrow-left">◀</div>
+                    <div class="handle-line"></div>
+                    <div class="handle-arrow-right">▶</div>
+                </div>
+            </div>
+
+            <div class="transformation-details">
+                <h3 id="transformation-title">Lawn Revitalization Project</h3>
+                <p id="transformation-desc">Reviving dry, patchy clay soil into a vibrant, uniform carpet of premium turf grass.</p>
+                <a href="#estimator" class="btn btn-secondary">Calculate Your Project Cost</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instant Cost Estimator / Quote Calculator -->
+    <section id="estimator" class="estimator-section">
+        <div class="container">
+            <div class="estimator-wrapper">
+                <div class="estimator-header">
+                    <span class="section-tag light-tag">Interactive Tool</span>
+                    <h2>Instant Landscaping Project Estimator</h2>
+                    <p>Select your requirements below to calculate an instant estimated ballpark for your property in Nairobi.</p>
+                </div>
+
+                <div class="estimator-grid">
+                    <div class="calculator-controls">
+                        <!-- Step 1 -->
+                        <div class="calc-group">
+                            <label class="calc-label"><span class="step-badge">1</span> Primary Service Needed</label>
+                            <div class="option-pills" id="service-options">
+                                <button type="button" class="opt-btn active" data-val="lawn" data-base="35000">🌱 Lawn Installation</button>
+                                <button type="button" class="opt-btn" data-val="garden" data-base="45000">🌿 Garden Design</button>
+                                <button type="button" class="opt-btn" data-val="hardscape" data-base="65000">🏗️ Hardscaping & Pavers</button>
+                                <button type="button" class="opt-btn" data-val="complete" data-base="110000">🏡 Full Makeover</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="calc-group">
+                            <label class="calc-label"><span class="step-badge">2</span> Property / Yard Size</label>
+                            <div class="option-pills" id="size-options">
+                                <button type="button" class="opt-btn active" data-val="small" data-multiplier="1.0">Standard Compound (< 500 sqm)</button>
+                                <button type="button" class="opt-btn" data-val="quarter" data-multiplier="1.6">1/8 - 1/4 Acre</button>
+                                <button type="button" class="opt-btn" data-val="half" data-multiplier="2.4">1/2 Acre</button>
+                                <button type="button" class="opt-btn" data-val="acre" data-multiplier="3.8">1 Acre + Estate</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="calc-group">
+                            <label class="calc-label"><span class="step-badge">3</span> Desired Add-ons (Optional)</label>
+                            <div class="addon-checkboxes">
+                                <label class="addon-item">
+                                    <input type="checkbox" id="addon-irrigation" data-price="25000">
+                                    <span>💧 Automated Drip / Sprinkler Irrigation</span>
+                                </label>
+                                <label class="addon-item">
+                                    <input type="checkbox" id="addon-lighting" data-price="20000">
+                                    <span>💡 Solar / Low-Voltage Accent Lighting</span>
+                                </label>
+                                <label class="addon-item">
+                                    <input type="checkbox" id="addon-maintenance" data-price="12000">
+                                    <span>✂️ 3 Months Post-Planting Care & Feeding</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Estimate Output Summary Card -->
+                    <div class="estimator-result-card">
+                        <div class="result-badge">Estimated Budget Range</div>
+                        <div class="result-price-display">
+                            <span class="currency">KES</span>
+                            <span class="price-val" id="calc-price-min">35,000</span>
+                            <span class="price-dash">–</span>
+                            <span class="price-val" id="calc-price-max">45,000</span>
+                        </div>
+                        <p class="result-note">*Subject to soil condition, slope, and site visit confirmation. Includes materials, labor, and plant preparation.</p>
+                        
+                        <div class="result-breakdown">
+                            <div class="breakdown-row">
+                                <span>Selected Service:</span>
+                                <strong id="summary-service">Lawn Installation</strong>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Yard Size:</span>
+                                <strong id="summary-size">Standard Compound</strong>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Add-ons Included:</span>
+                                <strong id="summary-addons">None</strong>
+                            </div>
+                        </div>
+
+                        <div class="result-actions">
+                            <button id="btn-share-estimate-wa" class="btn btn-whatsapp-full">
+                                💬 Send Scope to WhatsApp for Site Confirmation
+                            </button>
+                            <a href="#contact" class="btn btn-secondary-full">Request Site Consultation Visit</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,21 +482,22 @@
     <section id="gallery" class="gallery-section">
         <div class="container">
             <div class="section-header">
-                <h2>Project Gallery</h2>
-                <p>Explore our portfolio of stunning landscaping transformations</p>
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Project Gallery</h2>
+                <p class="section-subtitle">Explore real photos from our residential and commercial installations across Nairobi</p>
             </div>
             
             <div class="gallery-filters">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="garden">Garden Design</button>
-                <button class="filter-btn" data-filter="hardscape">Hardscaping</button>
-                <button class="filter-btn" data-filter="lawn">Lawn Care</button>
-                <button class="filter-btn" data-filter="trees">Trees & Plants</button>
-                <button class="filter-btn" data-filter="outdoor">Outdoor Living</button>
+                <button class="filter-btn" data-filter="garden">🌿 Garden Design</button>
+                <button class="filter-btn" data-filter="hardscape">🏗️ Hardscaping</button>
+                <button class="filter-btn" data-filter="lawn">🌱 Lawn Care</button>
+                <button class="filter-btn" data-filter="trees">🌳 Trees & Plants</button>
+                <button class="filter-btn" data-filter="outdoor">🏡 Outdoor Living</button>
             </div>
 
             <div class="gallery-grid" id="gallery-container">
-                <!-- Gallery items will be loaded dynamically by JavaScript -->
+                <!-- Gallery items loaded dynamically by JavaScript -->
             </div>
 
             <div class="load-more-container">
@@ -147,51 +506,244 @@
         </div>
     </section>
 
+    <!-- Testimonials / Client Reviews -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What Clients Say</span>
+                <h2 class="section-title">Trusted by Homeowners Across Nairobi</h2>
+                <p class="section-subtitle">Read why our clients recommend CohScapes for reliable, high-end landscaping</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-quote">"CohScapes completely turned around our compound in Karen. We had tough red soil and persistent drainage issues. Their team leveled the yard, put in gorgeous Kikuyu grass, and built a custom stone walkway. Exceptional service and punctuality."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">PK</div>
+                        <div class="client-details">
+                            <h4>Dr. Peter K.</h4>
+                            <span>Karen, Nairobi · Residential Estate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-quote">"The team designed a modern outdoor patio with subtle evening lighting for our residence in Runda. It's now the centerpiece of our home whenever we host friends. Highly recommend their hardscaping team!"</p>
+                    <div class="client-info">
+                        <div class="client-avatar">SM</div>
+                        <div class="client-details">
+                            <h4>Sarah & Mark M.</h4>
+                            <span>Runda, Nairobi · Patio & Hardscaping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-quote">"Professional from start to finish. Brian and the team were communicative, gave us a fair upfront quote, and completed the turf installation and garden borders two days ahead of schedule. Truly 5-star quality."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">DO</div>
+                        <div class="client-details">
+                            <h4>David O.</h4>
+                            <span>Westlands, Nairobi · Garden Makeover</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Areas Tag Cloud -->
+            <div class="service-areas-bar">
+                <span>📍 Key Service Areas in Nairobi:</span>
+                <span class="area-pill">Karen</span>
+                <span class="area-pill">Runda</span>
+                <span class="area-pill">Muthaiga</span>
+                <span class="area-pill">Lavington</span>
+                <span class="area-pill">Kilimani</span>
+                <span class="area-pill">Westlands</span>
+                <span class="area-pill">Kitisuru</span>
+                <span class="area-pill">Rosslyn</span>
+                <span class="area-pill">Spring Valley</span>
+                <span class="area-pill">Kiambu Road</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about working with CohScapes</p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer free on-site consultations?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We visit your property anywhere within Nairobi and neighboring areas to assess your soil type, drainage, sunlight exposure, and space dimensions before presenting an itemized, transparent quote.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What type of grass is best for Nairobi homes?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For most Nairobi residential compounds, <strong>Kikuyu Grass</strong> is the top choice due to its dense, lush emerald blade and quick recovery. For shaded areas under trees, <strong>Paspalum</strong> or <strong>Pemba Grass</strong> is ideal. We inspect your yard and recommend the perfect grass variety.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does a landscaping transformation take?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Standard residential lawn installation and garden planting takes between <strong>3 to 5 business days</strong>. Larger compound redesigns that include stone patios, fire pits, and walkways generally take <strong>1 to 2 weeks</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide ongoing garden and lawn maintenance?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We offer flexible weekly, bi-weekly, and monthly maintenance packages covering mowing, hedge sculpting, weed control, fertilizer application, and plant health checks.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I get an exact price quote?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can use our <a href="#estimator">Instant Estimator above</a> for a quick ballpark, or tap the WhatsApp button to send photos and measurements of your yard. We will respond promptly with recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Get Started Today</h2>
-                <p>Ready to transform your outdoor space? Contact us for a free consultation</p>
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Schedule Your Consultation</h2>
+                <p class="section-subtitle">Tell us about your outdoor vision and our team will get in touch within a few hours</p>
             </div>
+
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>📞 Call Us</h3>
-                        <p>(+254) 758-467-157 / 781-492-929</p>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Call Us Direct</h3>
+                            <p><a href="tel:+254758467157">(+254) 758-467-157</a></p>
+                            <p><a href="tel:+254781492929">(+254) 781-492-929</a></p>
+                            <small>Available 8am – 6pm, Mon – Sat</small>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h3>📧 Email</h3>
-                        <p>cohscapeslandscapers@gmail.com</p>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <div>
+                            <h3>Chat on WhatsApp</h3>
+                            <p><a href="https://wa.me/254758467157?text=Hi%20CohScapes!%20I'm%20contacting%20you%20from%20your%20website%20to%20discuss%20a%20landscaping%20project." target="_blank" rel="noopener noreferrer">Message (+254) 758-467-157</a></p>
+                            <small>Fastest response time</small>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h3>📍 Location</h3>
-                        <p>Nairobi<br>Kenya</p>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:cohscapeslandscapers@gmail.com">cohscapeslandscapers@gmail.com</a></p>
+                            <small>For RFPs and blueprints</small>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h3>⏰ Hours</h3>
-                        <p>Mon - Fri: 9AM - 5PM<br>Sat: 10AM - 4PM</p>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Nairobi, Kenya</p>
+                            <small>Serving Nairobi Metropolitan & surrounding counties</small>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contact-form">
+
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="styled-form">
                         <div class="form-row">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
+                            <div class="form-group">
+                                <label for="form-name">Your Full Name *</label>
+                                <input type="text" id="form-name" name="name" placeholder="e.g. John Kamau" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">Phone Number (WhatsApp) *</label>
+                                <input type="tel" id="form-phone" name="phone" placeholder="e.g. 0712 345 678" required>
+                            </div>
                         </div>
+
                         <div class="form-row">
-                            <input type="tel" placeholder="Phone Number">
-                            <select>
-                                <option>Select Service</option>
-                                <option>Garden Design</option>
-                                <option>Hardscaping</option>
-                                <option>Lawn Care</option>
-                                <option>Tree & Plant Care</option>
-                                <option>Outdoor Living</option>
-                            </select>
+                            <div class="form-group">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" name="email" placeholder="e.g. john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-location">Your Location / Neighborhood</label>
+                                <input type="text" id="form-location" name="location" placeholder="e.g. Karen, Nairobi">
+                            </div>
                         </div>
-                        <textarea placeholder="Tell us about your project..." rows="4"></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-service">Select Service</label>
+                                <select id="form-service" name="service">
+                                    <option value="Garden Design">🌿 Garden Design & Planting</option>
+                                    <option value="Hardscaping">🏗️ Hardscaping & Stonework</option>
+                                    <option value="Lawn Care">🌱 Lawn Installation & Restoration</option>
+                                    <option value="Tree Care">🌳 Tree Planting & Pruning</option>
+                                    <option value="Outdoor Lighting">💡 Landscape Lighting</option>
+                                    <option value="Outdoor Living">🏡 Outdoor Living & Patios</option>
+                                    <option value="Complete Overhaul">⭐ Complete Compound Overhaul</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-size">Compound Size</label>
+                                <select id="form-size" name="size">
+                                    <option value="Standard Compound">Standard Residential Compound</option>
+                                    <option value="1/8 to 1/4 Acre">1/8 to 1/4 Acre</option>
+                                    <option value="1/2 Acre">1/2 Acre</option>
+                                    <option value="1 Acre +">1 Acre or Larger</option>
+                                    <option value="Commercial">Commercial / Estate</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form-message">Project Details</label>
+                            <textarea id="form-message" name="message" rows="4" placeholder="Describe your outdoor space, current condition, and your ideal vision..."></textarea>
+                        </div>
+
+                        <div class="form-buttons-row">
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                            </button>
+                            <button type="button" id="btn-submit-wa" class="btn btn-whatsapp">
+                                <span>💬 Submit via WhatsApp</span>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -202,30 +754,75 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>CohScapes.</h3>
-                    <p>Transforming landscapes, enriching lives.</p>
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-leaf">🌿</span>
+                        <h3>CohScapes<span>.</span></h3>
+                    </div>
+                    <p>Transforming outdoor compounds into lush, sustainable, and functional living works of art across Nairobi, Kenya.</p>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/254758467157" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
+                        <a href="tel:+254758467157" aria-label="Phone">📞</a>
+                        <a href="mailto:cohscapeslandscapers@gmail.com" aria-label="Email">📧</a>
+                    </div>
                 </div>
-                <div class="footer-links">
+
+                <div class="footer-col">
                     <h4>Quick Links</h4>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#transformations">Before & After</a></li>
+                        <li><a href="#estimator">Cost Calculator</a></li>
+                        <li><a href="#gallery">Project Gallery</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <p>📞 (+254) 758-467-157 / 781-492-929</p>
-                    <p>📧 cohscapeslandscapers@gmail.com</p>
+
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Garden Design & Planting</a></li>
+                        <li><a href="#services">Natural Stone Patios</a></li>
+                        <li><a href="#services">Lawn Turf Installation</a></li>
+                        <li><a href="#services">Hedge & Tree Care</a></li>
+                        <li><a href="#services">Compound Irrigation</a></li>
+                        <li><a href="#services">Outdoor Fire Pits</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p class="footer-contact-item">📞 <a href="tel:+254758467157">(+254) 758-467-157</a></p>
+                    <p class="footer-contact-item">📞 <a href="tel:+254781492929">(+254) 781-492-929</a></p>
+                    <p class="footer-contact-item">📧 <a href="mailto:cohscapeslandscapers@gmail.com">cohscapeslandscapers@gmail.com</a></p>
+                    <p class="footer-contact-item">📍 Nairobi, Kenya</p>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 CohScapes . All rights reserved.</p>
+                <p>&copy; 2026 CohScapes Landscaping Services. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp CTA Button -->
+    <a href="https://wa.me/254758467157?text=Hi%20CohScapes!%20I'm%20visiting%20your%20website%20and%20would%20like%20to%20ask%20about%20a%20landscaping%20project." target="_blank" rel="noopener noreferrer" class="floating-wa-btn" id="floating-wa" aria-label="Chat on WhatsApp">
+        <span class="wa-tooltip">Chat with us on WhatsApp! 💬</span>
+        <svg class="wa-svg" viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 2a14 14 0 0 0-12.1 21L2 30l7.2-1.9A14 14 0 1 0 16 2zm0 25.6a11.6 11.6 0 0 1-5.9-1.6l-.4-.3-4.4 1.2 1.2-4.3-.3-.4A11.6 11.6 0 1 1 16 27.6zm6.4-8.7c-.3-.2-2-.9-2.3-1s-.6-.2-.8.2-.9 1.1-1.1 1.3-.4.3-.7.1a9.2 9.2 0 0 1-2.7-1.7 10.2 10.2 0 0 1-1.9-2.4c-.2-.3 0-.5.2-.7s.3-.4.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6s-.8-2-1.1-2.7c-.3-.7-.6-.6-.8-.6h-.7a1.4 1.4 0 0 0-1 .5 4.3 4.3 0 0 0-1.3 3.2c0 1.9 1.4 3.7 1.6 4 .2.2 2.7 4.2 6.6 5.9 1 .4 1.7.7 2.3.9 1 .3 1.9.3 2.6.2.8-.1 2.4-1 2.7-2 .3-1 .3-1.8.2-2s-.3-.3-.6-.5z"/>
+        </svg>
+    </a>
+
+    <!-- Mobile Sticky Quick Contact Bar -->
+    <div class="mobile-sticky-bar">
+        <a href="tel:+254758467157" class="mobile-bar-btn mobile-call">
+            <span>📞 Call Us</span>
+        </a>
+        <a href="https://wa.me/254758467157?text=Hi%20CohScapes!%20I'd%20like%20to%20get%20a%20quote%20for%20my%20compound." target="_blank" rel="noopener noreferrer" class="mobile-bar-btn mobile-wa">
+            <span>💬 WhatsApp</span>
+        </a>
+    </div>
 
     <!-- Lightbox Modal -->
     <div id="lightbox" class="lightbox">
@@ -242,8 +839,8 @@
                 <p id="lightbox-description"></p>
             </div>
             <div class="lightbox-nav">
-                <button id="prev-btn">❮</button>
-                <button id="next-btn">❯</button>
+                <button id="prev-btn" aria-label="Previous item">❮</button>
+                <button id="next-btn" aria-label="Next item">❯</button>
             </div>
         </div>
     </div>
